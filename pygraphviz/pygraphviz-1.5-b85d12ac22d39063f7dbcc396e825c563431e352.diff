@@ -1,0 +1,53 @@
+--- pygraphviz/graphviz_wrap.c.orig	2018-09-10 16:07:12.000000000 +0300
++++ pygraphviz/graphviz_wrap.c	2019-02-26 18:05:20.281741400 +0200
+@@ -2988,7 +2988,18 @@
+ 
+ 
+ #if PY_VERSION_HEX >= 0x03000000
+-extern PyTypeObject PyIOBase_Type;
++static PyObject *PyIOBase_TypeObj;
++
++static int init_file_emulator(void)
++{
++  PyObject *io = PyImport_ImportModule("_io");
++  if (io == NULL)
++    return -1;
++  PyIOBase_TypeObj = PyObject_GetAttrString(io, "_IOBase");
++  if (PyIOBase_TypeObj == NULL)
++    return -1;
++  return 0;
++}
+ #endif
+ 
+ 
+@@ -3449,7 +3460,7 @@
+   {
+ #if PY_VERSION_HEX >= 0x03000000 || defined(PYPY_VERSION)
+ #if !defined(PYPY_VERSION)
+-    if (!PyObject_IsInstance(obj0, (PyObject *)&PyIOBase_Type)) {
++    if (!PyObject_IsInstance(obj0, PyIOBase_TypeObj)) {
+       PyErr_SetString(PyExc_TypeError, "not a file handle");
+       return NULL;
+     }
+@@ -3523,7 +3534,7 @@
+   {
+ #if PY_VERSION_HEX >= 0x03000000 || defined(PYPY_VERSION)
+ #if !defined(PYPY_VERSION)
+-    if (!PyObject_IsInstance(obj1, (PyObject *)&PyIOBase_Type)) {
++    if (!PyObject_IsInstance(obj1, PyIOBase_TypeObj)) {
+       PyErr_SetString(PyExc_TypeError, "not a file handle");
+       return NULL;
+     }
+@@ -6051,6 +6062,12 @@
+   
+   SWIG_InstallConstants(d,swig_const_table);
+   
++#if PY_VERSION_HEX >= 0x03000000
++  if (init_file_emulator() < 0) {
++    return NULL;
++  }
++#endif
++
+   PyDict_SetItemString(md,(char*)"cvar", SWIG_globals());
+   SWIG_addvarlink(SWIG_globals(),(char*)"Agdirected",Swig_var_Agdirected_get, Swig_var_Agdirected_set);
+   SWIG_addvarlink(SWIG_globals(),(char*)"Agstrictdirected",Swig_var_Agstrictdirected_get, Swig_var_Agstrictdirected_set);
