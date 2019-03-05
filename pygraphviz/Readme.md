@@ -5,7 +5,7 @@
 - Sources dwnloaded from [[PyPI]: pygraphviz - pygraphviz-1.5.zip](https://files.pythonhosted.org/packages/7e/b1/d6d849ddaf6f11036f9980d433f383d4c13d1ebcfc3cd09bc845bda7e433/pygraphviz-1.5.zip)
 - Patch (file present in current dir) applied on top
 - Using (*cdt*, *cgraph* from) [[Graphviz]: Graph Visualization Software](https://www.graphviz.org)
-    - Sources downloaded from [[GitLab]: graphviz/graphviz - Graph Visualization Tools](https://gitlab.com/graphviz/graphviz):
+    - Sources downloaded from [[GitLab]: graphviz/graphviz - (master) Graph Visualization Tools](https://gitlab.com/graphviz/graphviz):
 
             [cfati@cfati-5510-0:/cygdrive/e/Work/Dev/Fati/WinBuild/graphviz/src/graphviz]> git show head
             commit 89292b5945933b1501293c04894ed9cf886241be (HEAD -> master, origin/master, origin/HEAD)
