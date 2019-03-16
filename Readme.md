@@ -1,4 +1,7 @@
-Prebuilt binaries for Windows
-=============================
+Prebuilt binaries
+=================
 
-Each subdirectory contains contains a separate tool (and has its own `Readme.md`).
+Prebuilt binaries for different platforms (organized in a tree-like manner) of various products.
+
+
+Only time will tell whether the platform clasification before the product one was a good idea.
