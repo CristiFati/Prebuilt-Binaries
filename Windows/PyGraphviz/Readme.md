@@ -21,7 +21,7 @@
 
 More details about the build process can be found at [[SO]: Installing pygraphviz on Windows 10 64-bit, Python 3.6 (@CristiFati's answer)](https://stackoverflow.com/questions/45093811/installing-pygraphviz-on-windows-10-64-bit-python-3-6/54890705#54890705).
 
-Currently, there are *.whl*s available for *Python* (*32bit* **and** *64bit*):
+Currently, there are *.whl*s available for *Python* (*64bit* **and** *32bit*):
 - *3.5*
 - *3.6*
 - *3.7*
