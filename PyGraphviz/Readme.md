@@ -1,4 +1,4 @@
-*Pygraphviz* *.whl*s
+*PyGraphviz* *.whl*s
 --------------------
 
 [[Github]: pygraphviz/pygraphviz - Python interface to Graphviz graph drawing package https://pygraphviz.github.io](https://github.com/pygraphviz/pygraphviz):
@@ -25,3 +25,4 @@ Currently, there are *.whl*s available for *Python* (*64bit* **and** *32bit*):
 - *3.5*
 - *3.6*
 - *3.7*
+

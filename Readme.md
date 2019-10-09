@@ -1,8 +1,11 @@
 Prebuilt binaries
 =================
 
-Prebuilt binaries on different platforms (organized in a tree-like manner) of various products.
+Prebuilt binaries on different platforms of various products.
 
 
 **Notes**:
-- Only time will tell whether the platform clasification before the product one was a good idea
+
+- They are not present in the official repositories
+- Some might be customized
+
