@@ -9,9 +9,11 @@ Prebuilt binaries on different platforms of various products.
 - They are not present in the official repositories
 - Some might be customized
 
+**IMPORTANT INFORMATION**
+
 ***Win* specific** (generics that apply unless otherwise specified):
 
-- Archive (*.zip*) packages should typically be unpacked in "*%ProgramFiles%*" ("*%ProgramFiles(x86)%*" for *32bit* binaries on *64bit* *OS*)
+- **Archive (*.zip*) packages should typically be unpacked in "*%ProgramFiles%*" ("*%ProgramFiles(x86)%*" for *32bit* binaries on *64bit* *OS*)**
     - Files in the archive are organized in a folder structure *${VENDOR}/${SOFTWARE}/${VERSION}/...*. Often, *${VENDOR}* and *${SOFTWARE}* are the same
     - The *bin* directory of such an "installation" could be added to *%PATH%* for convenience
 - *MS **UCRT*** (<i><b>U</b>niversal <b>C</b> <b>R</b>un<b>T</b>ime</i> (from *Visual Studio 2015* **or newer**)) is used for builds
