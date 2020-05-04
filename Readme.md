@@ -9,7 +9,17 @@ Prebuilt binaries on different platforms of various products.
 - They are not present in the official repositories
 - Some might be customized
 
-**IMPORTANT INFORMATION**
+
+**LEGAL INFORMATION**
+
+**Under no circumstances, I** (the entity that built the software in this repository) **should be held responsible for any**:
+- Damage or loss that may appear because the software use
+- **License terms violation**. Anyone who uses the software is responsible for consulting (and **complying with**) the license terms. If something isn't clear, the software vendor should be contacted, before using the software
+
+For software that I customly built (*e.g.* *.zip* files), I included the license file(s) (*e.g.* *LICENSE\**, *README\**, *COPYING\**, ...) of the software itself (and in some cases of any additional software that it uses) in the package. <br>**But** for some software that automatically generates the build artefacts (*e.g.* *.whl* files), and doesn't include the license file(s), in order to avoid modifying the build process, I didn't. Instead, I uploaded the files next to the artefacts, so they are easily accessible.
+
+
+**DETAILS**
 
 ***Win* specific** (generics that apply unless otherwise specified):
 
