@@ -8,6 +8,11 @@ Prebuilt binaries on different platforms of various products.
 
 - They are not present in the official repositories
 - Some might be customized
+- If someone needs:
+    1. Another (newer) version of an existing software
+    2. A brand new software
+
+    ping me, and I'll try to add it. Note that it might / will take a while (especially for the 2<sup>nd</sup> item), and in some cases (when too much work / research is needed), it migt not even get materialized
 
 
 **LEGAL INFORMATION**
