@@ -1,3 +1,6 @@
-*LibreSSL 3.2.0* *.bin*s
-------------------------
+*LibreSSL 3.2.0* binaries
+-------------------------
+
+**Platforms**:
+- *Windows*
 

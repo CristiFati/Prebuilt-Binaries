@@ -1,5 +1,5 @@
-*OpenSSL 3.0* *.bin*s
----------------------
+*OpenSSL 3.0* binaries
+----------------------
 
 - v3.0.0-alpha**1**:
 
@@ -10,4 +10,7 @@
 - v3.0.0-alpha**2**:
 
     Some (*16*) warnings (`libnonfips-lib-der_digests.obj : warning LNK4006: _der_oid_id_sha256 already defined in libnonfips-lib-der_rsa.obj; second definition ignored`) when creating (*lib*) *libnonfips\_static.lib*, *libcrypto\_static.lib*, *libfips\_static.lib*
+
+**Platforms**:
+- *Windows*
 
