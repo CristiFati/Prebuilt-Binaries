@@ -1,4 +1,4 @@
-*LibreSSL 3.2.0* binaries
+*LibreSSL 3.2.\** binaries
 -------------------------
 
 **Platforms**:
