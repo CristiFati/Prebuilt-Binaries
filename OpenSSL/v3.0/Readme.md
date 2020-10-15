@@ -43,7 +43,7 @@
     - `test\p_test.def(5) : warning LNK4093: Drive/Directory component ignored in 'LIBRARY' statement`
     - `p_test.exp : warning LNK4070: /OUT:p_test-3.dll directive in .EXP differs from output filename 'test\p_test.dll'; ignoring directive`
 
-- *v3.0.0-alpha**6***:
+- *v3.0.0-alpha**7***:
 
     Warnings:
 
