@@ -3,7 +3,7 @@ Prebuilt binaries
 
 Prebuilt binaries on different platforms of various products.
 
-**Binaries are versioned using Large File System (*LFS*). Therefore, the [\[GitHub.Git-LFS\]: Git Large File Storage](https://git-lfs.github.com) extension is required in order to get them**.
+**Update**: Binary files are versioned using Large File System (*LFS*). Therefore, the [\[GitHub.Git-LFS\]: Git Large File Storage](https://git-lfs.github.com) extension is required for any *Git* operation (*clone*) to work properly. Regular download (from *Web* browser) is not impacted.
 
 **Notes**:
 
