@@ -7,7 +7,7 @@
     - They're renamed (to avoid conflicts with default ones)
     - Dynamically linking to them
 
-More details about the build process can be found at [[SO]: OpenSSL FIPS\_mode\_set not working in Python cryptography library (@CristiFati's answer)](https://stackoverflow.com/questions/58228435/openssl-fips-mode-set-not-working-in-python-cryptography-library/58311407#58311407).
+More details about the build process can be found at [[SO]: OpenSSL FIPS\_mode\_set not working in Python cryptography library (@CristiFati's answer)](https://stackoverflow.com/a/58311407/4788546).
 
 **Platforms**:
 - *Linux*

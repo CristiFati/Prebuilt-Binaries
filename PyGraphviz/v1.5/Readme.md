@@ -7,7 +7,7 @@
     - Note that it **doesn't fix** *graphviz.i*, **only** the *SWIG* wrapper generated from it (*graphviz\_wrap.cpp*)
 - Using (*cdt*, *cgraph* from) [[Graphviz]: Graph Visualization Software](https://www.graphviz.org) (*v2.42.2* - built with *VStudio*)
 
-More details about the build process can be found at [[SO]: Installing pygraphviz on Windows 10 64-bit, Python 3.6 (@CristiFati's answer)](https://stackoverflow.com/questions/45093811/installing-pygraphviz-on-windows-10-64-bit-python-3-6/54890705#54890705).
+More details about the build process can be found at [[SO]: Installing pygraphviz on Windows 10 64-bit, Python 3.6 (@CristiFati's answer)](https://stackoverflow.com/a/54890705/4788546).
 
 **Platforms**:
 - *Windows*
