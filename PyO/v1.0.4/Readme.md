@@ -9,6 +9,8 @@
     - [[GitHub]: belangeo/pyo - Fix for #241: Python 3.10 breaks SfPlayer](https://github.com/belangeo/pyo/pull/247)
 - More details on [[SO]: Can't install pyo using pip (@CristiFati's answer)](https://stackoverflow.com/a/73512700/4788546)
 
+Built and added (*Win*) *pc032* (*032bit*) *.whl*s as a personal exercise.
+
 **Platforms**:
 - *Windows*
 
