@@ -28,13 +28,19 @@ For software that I customly built (*e.g.* *.zip* files), I included the license
 
 **DETAILS**
 
-***Win* specific** (generics that apply unless otherwise specified):
+Generics that apply unless otherwise specified
 
 - **Archive (*.zip*) packages should typically be unpacked in**:
-    - **"*%ProgramFiles%*"**
-    - **"*%ProgramFiles(x86)%*" for *32bit* binaries on *64bit* *OS* (which is equivalent to *%ProgramFiles%* in *32bit* processes)**
+    - ***Win* specific**
+        - ***"C:\\Program Files"***
+        - ***"C:\\Program Files (x86)"*** for *032bit* binaries on *064bit* *OS* (which is equivalent to *"C:\\Program Files"* in *032bit* processes)
+    - ***Nix* specific**
+        - ***/usr/local* (requires *root*)**. Some *ELF*s might have the *DT\_RUNPATH* (former *DT\_RPATH*) flag set to this location
 - Files in the archive are organized in a folder structure *${VENDOR}/${SOFTWARE}/${VERSION}/...*. Often, *${VENDOR}* and *${SOFTWARE}* are the same
     - The *bin* directory of such an "installation" could be added to *%PATH%* for convenience
-- *MS **UCRT*** (<i><b>U</b>niversal <b>C</b> <b>R</b>un<b>T</b>ime</i> (from *Visual Studio 2015* **or newer**)) is used for builds
+    - ***Nix* specific**
+        - Folder structure starts with *${ARCHITECTURE}* or bitness (which for *Intel* / *AMD* *CPU*s can be *pc064*, *pc032*)
+- ***Win* specific**
+    - *MS **UCRT*** (<i><b>U</b>niversal <b>C</b> <b>R</b>un<b>T</b>ime</i> (from *Visual Studio 2015* **or newer**)) is used for builds
     - Binaries are typically linked against the **dynamic** *UCRT* version. In that case, the *Visual C Redistributable* (currently (*URL* might change in the future) available at [[MS.Support]: The latest supported Visual C++ downloads](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)) is required on the target system
 
