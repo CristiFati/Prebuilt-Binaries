@@ -14,7 +14,7 @@
 
 - *LibCoral*:
     - Sources downloaded from [[GitHub]: google-coral/libcoral - libcoral](https://github.com/google-coral/libcoral) (**commit *6589d0bb49c7fdbc4194ce178d06f8cdc7b5df60***)
-    - *Eigen* API change bugs fixed
+    - *Eigen* *API* changes bugs fixed
 
 - *PyCoral*:
     - Sources downloaded from [[GitHub]: google-coral/pycoral - PyCoral API](https://github.com/google-coral/pycoral) (**commit *ae743b0b234d66d784826ccfbb4607a69dc1a2a8***)
@@ -25,8 +25,8 @@
 - *FlatBuffers*: *v22.10.26*
 - *Python* related:
     - *NumPy*:
-        - *Python* *3.7* - *3.10*: *v1.21.2*
-        - *Python* *3.11*: *v1.23.2*
+        - *Python* ***3.7*** - ***3.10***: *v1.21.2*
+        - *Python* ***3.11***: *v1.23.2*
     - *PyBind11*: *v2.10.3*
 
 **Platforms**:
