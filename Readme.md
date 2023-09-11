@@ -3,7 +3,17 @@ Prebuilt binaries
 
 Prebuilt binaries on different platforms of various products.
 
-**Update**: Binary files are versioned using Large File System (*LFS*). Therefore, the [\[GitHub.Git-LFS\]: Git Large File Storage](https://git-lfs.github.com) extension is required for any *Git* operation (*clone*) to work properly. Regular download (from *Web* browser) is not impacted.
+**Updates**
+
+- *210726*: Binary files are versioned using Large File System (*LFS*). Therefore, the [\[GitHub.Git-LFS\]: Git Large File Storage](https://git-lfs.github.com) extension is required for any *Git* operation (*clone*) to work properly. Regular download (from *Web* browser) is not impacted
+
+**Glossary**
+
+Some terms will be used in this repository. Listing them here to avoid any confusion:
+- Architecture:
+    - ***pc***: *Intel*, *AMD* or compatible *CPU*, followed by the bitness:
+        - ***pc032***: *x86*, *i386*, *i686*, ...
+        - ***pc064***: *x64*, *AMD64*, *x86\_64*, ...
 
 **Notes**:
 
@@ -13,7 +23,7 @@ Prebuilt binaries on different platforms of various products.
     1. Another (newer) version of an existing software
     2. A brand new software
 
-    ping me (here, [\[StackOverflow\]: CristiFati](https://stackoverflow.com/users/4788546/cristifati), [\[LinkedIn\]: Cristi Fati](https://www.linkedin.com/in/cristi-fati-6942b844), ... ), and I'll try to add it. Note that it might / will take a while (especially for the 2<sup>nd</sup> item), and in some cases (when too much work / research is needed), it migt not even get materialized
+    ping me (here (via *Discussions*), [\[StackOverflow\]: CristiFati](https://stackoverflow.com/users/4788546/cristifati), [\[LinkedIn\]: Cristi Fati](https://www.linkedin.com/in/cristi-fati-6942b844), ... ), and I'll try to add it. Note that it might / will take a while (especially for the 2<sup>nd</sup> item), and in some cases (when too much work / research is needed), it migt not even get materialized
 - If someone spots a problem in an existing software, please let me know so I can remediate it *ASAP* (or remove the faulty piece)
 
 
@@ -33,13 +43,13 @@ Generics that apply unless otherwise specified
 - **Archive (*.zip*) packages should typically be unpacked in**:
     - ***Win* specific**
         - ***"C:\\Program Files"***
-        - ***"C:\\Program Files (x86)"*** for *032bit* binaries on *064bit* *OS* (which is equivalent to *"C:\\Program Files"* in *032bit* processes)
+        - ***"C:\\Program Files (x86)"*** for *pc032* binaries on *pc064* *OS* (which is equivalent to *"C:\\Program Files"* in *pc032* processes)
     - ***Nix* specific**
-        - ***/usr/local* (requires *root*)**. Some *ELF*s might have the *DT\_RUNPATH* (former *DT\_RPATH*) flag set to this location
+        - ***/usr/local* (requires *root* (*sudo*))**. Some *ELF*s might have the *DT\_RUNPATH* (former *DT\_RPATH*) flag set to this location
 - Files in the archive are organized in a folder structure *${VENDOR}/${SOFTWARE}/${VERSION}/...*. Often, *${VENDOR}* and *${SOFTWARE}* are the same
-    - The *bin* directory of such an "installation" could be added to *%PATH%* for convenience
+    - The *bin* directory of such an "installation" could be added to *PATH* variable for convenience
     - ***Nix* specific**
-        - Folder structure starts with *${ARCHITECTURE}* or bitness (which for *Intel* / *AMD* *CPU*s can be *pc064*, *pc032*)
+        - Folder structure (above) **starts with** *${ARCHITECTURE}*
 - ***Win* specific**
     - *MS **UCRT*** (<i><b>U</b>niversal <b>C</b> <b>R</b>un<b>T</b>ime</i> (from *Visual Studio 2015* **or newer**)) is used for builds
     - Binaries are typically linked against the **dynamic** *UCRT* version. In that case, the *Visual C Redistributable* (currently (*URL* might change in the future) available at [[MS.Support]: The latest supported Visual C++ downloads](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)) is required on the target system
