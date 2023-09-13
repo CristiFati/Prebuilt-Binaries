@@ -15,6 +15,8 @@
 - If binaries not present for a certain (new) platform, it's because the ones existing in most recent before it, work
 - *pc064* binaries (where present), are for platforms where that particular version is not supported (provided), and building them was a *pc032* build prerequisite
 - Sources checked out in a branch from [[GitHub]: CristiFai/cpython](https://github.com/CristiFati/cpython) (fork of official *repo* - select / checkout the appropriate tag for each version)
+- Enabling *TZSet* and profile generation (for cross build), required modifying *Configure* script (***-dirty*** tag)
+- On *Ubuntu 18* for *pc032*, some *MultiProcessing* tests hang (noticed some error stating they might interact with eachother)
 
 **Platforms**:
 - *Linux*
