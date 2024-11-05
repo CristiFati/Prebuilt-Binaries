@@ -4,5 +4,6 @@
 - *OpenSSL-FIPS 2.0.16* was used (where applicable)
 
 **Platforms**:
+- *Linux*
 - *Windows*
 
